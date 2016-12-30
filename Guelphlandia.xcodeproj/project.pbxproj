@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013DA6491E15B72200874273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6481E15B72200874273 /* AppDelegate.swift */; };
+		013DA64B1E15B72200874273 /* randomOfferingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA64A1E15B72200874273 /* randomOfferingVC.swift */; };
+		013DA64E1E15B72200874273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013DA64C1E15B72200874273 /* Main.storyboard */; };
+		013DA6511E15B72200874273 /* Guelphlandia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 013DA64F1E15B72200874273 /* Guelphlandia.xcdatamodeld */; };
+		013DA6531E15B72200874273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013DA6521E15B72200874273 /* Assets.xcassets */; };
+		013DA6561E15B72200874273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013DA6541E15B72200874273 /* LaunchScreen.storyboard */; };
+		013DA6611E15B72200874273 /* GuelphlandiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6601E15B72200874273 /* GuelphlandiaTests.swift */; };
+		013DA66C1E15B72200874273 /* GuelphlandiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA66B1E15B72200874273 /* GuelphlandiaUITests.swift */; };
+		013DA67A1E15B7E300874273 /* tiza.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 013DA6791E15B79300874273 /* tiza.ttf */; };
+		013DA67C1E15B89100874273 /* colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67B1E15B89100874273 /* colours.swift */; };
+		013DA67E1E15BBEF00874273 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67D1E15BBEF00874273 /* data.swift */; };
+		013DA6801E15C64700874273 /* listingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67F1E15C64700874273 /* listingVC.swift */; };
+		013DA6821E15CB0300874273 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6811E15CB0300874273 /* Extensions.swift */; };
+		013DA6841E15D1A700874273 /* headerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6831E15D1A700874273 /* headerCell.swift */; };
+		013DA6861E15DF4600874273 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6851E15DF4600874273 /* Deal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		013DA65D1E15B72200874273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013DA63D1E15B72200874273 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013DA6441E15B72200874273;
+			remoteInfo = Guelphlandia;
+		};
+		013DA6681E15B72200874273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013DA63D1E15B72200874273 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013DA6441E15B72200874273;
+			remoteInfo = Guelphlandia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013DA6451E15B72200874273 /* Guelphlandia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guelphlandia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		013DA6481E15B72200874273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		013DA64A1E15B72200874273 /* randomOfferingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomOfferingVC.swift; sourceTree = "<group>"; };
+		013DA64D1E15B72200874273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		013DA6501E15B72200874273 /* Guelphlandia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Guelphlandia.xcdatamodel; sourceTree = "<group>"; };
+		013DA6521E15B72200874273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		013DA6551E15B72200874273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		013DA6571E15B72200874273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013DA65C1E15B72200874273 /* GuelphlandiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuelphlandiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		013DA6601E15B72200874273 /* GuelphlandiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuelphlandiaTests.swift; sourceTree = "<group>"; };
+		013DA6621E15B72200874273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013DA6671E15B72200874273 /* GuelphlandiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuelphlandiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		013DA66B1E15B72200874273 /* GuelphlandiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuelphlandiaUITests.swift; sourceTree = "<group>"; };
+		013DA66D1E15B72200874273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013DA6791E15B79300874273 /* tiza.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tiza.ttf; sourceTree = "<group>"; };
+		013DA67B1E15B89100874273 /* colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colours.swift; sourceTree = "<group>"; };
+		013DA67D1E15BBEF00874273 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		013DA67F1E15C64700874273 /* listingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listingVC.swift; sourceTree = "<group>"; };
+		013DA6811E15CB0300874273 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		013DA6831E15D1A700874273 /* headerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerCell.swift; sourceTree = "<group>"; };
+		013DA6851E15DF4600874273 /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013DA6421E15B72200874273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013DA6591E15B72200874273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013DA6641E15B72200874273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013DA63C1E15B72200874273 = {
+			isa = PBXGroup;
+			children = (
+				013DA6471E15B72200874273 /* Guelphlandia */,
+				013DA65F1E15B72200874273 /* GuelphlandiaTests */,
+				013DA66A1E15B72200874273 /* GuelphlandiaUITests */,
+				013DA6461E15B72200874273 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		013DA6461E15B72200874273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6451E15B72200874273 /* Guelphlandia.app */,
+				013DA65C1E15B72200874273 /* GuelphlandiaTests.xctest */,
+				013DA6671E15B72200874273 /* GuelphlandiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		013DA6471E15B72200874273 /* Guelphlandia */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6791E15B79300874273 /* tiza.ttf */,
+				013DA6481E15B72200874273 /* AppDelegate.swift */,
+				013DA64A1E15B72200874273 /* randomOfferingVC.swift */,
+				013DA64C1E15B72200874273 /* Main.storyboard */,
+				013DA6811E15CB0300874273 /* Extensions.swift */,
+				013DA6831E15D1A700874273 /* headerCell.swift */,
+				013DA67F1E15C64700874273 /* listingVC.swift */,
+				013DA67D1E15BBEF00874273 /* data.swift */,
+				013DA6851E15DF4600874273 /* Deal.swift */,
+				013DA6521E15B72200874273 /* Assets.xcassets */,
+				013DA6541E15B72200874273 /* LaunchScreen.storyboard */,
+				013DA6571E15B72200874273 /* Info.plist */,
+				013DA64F1E15B72200874273 /* Guelphlandia.xcdatamodeld */,
+				013DA67B1E15B89100874273 /* colours.swift */,
+			);
+			path = Guelphlandia;
+			sourceTree = "<group>";
+		};
+		013DA65F1E15B72200874273 /* GuelphlandiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6601E15B72200874273 /* GuelphlandiaTests.swift */,
+				013DA6621E15B72200874273 /* Info.plist */,
+			);
+			path = GuelphlandiaTests;
+			sourceTree = "<group>";
+		};
+		013DA66A1E15B72200874273 /* GuelphlandiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				013DA66B1E15B72200874273 /* GuelphlandiaUITests.swift */,
+				013DA66D1E15B72200874273 /* Info.plist */,
+			);
+			path = GuelphlandiaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		013DA6441E15B72200874273 /* Guelphlandia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013DA6701E15B72200874273 /* Build configuration list for PBXNativeTarget "Guelphlandia" */;
+			buildPhases = (
+				013DA6411E15B72200874273 /* Sources */,
+				013DA6421E15B72200874273 /* Frameworks */,
+				013DA6431E15B72200874273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guelphlandia;
+			productName = Guelphlandia;
+			productReference = 013DA6451E15B72200874273 /* Guelphlandia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		013DA65B1E15B72200874273 /* GuelphlandiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013DA6731E15B72200874273 /* Build configuration list for PBXNativeTarget "GuelphlandiaTests" */;
+			buildPhases = (
+				013DA6581E15B72200874273 /* Sources */,
+				013DA6591E15B72200874273 /* Frameworks */,
+				013DA65A1E15B72200874273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013DA65E1E15B72200874273 /* PBXTargetDependency */,
+			);
+			name = GuelphlandiaTests;
+			productName = GuelphlandiaTests;
+			productReference = 013DA65C1E15B72200874273 /* GuelphlandiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		013DA6661E15B72200874273 /* GuelphlandiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013DA6761E15B72200874273 /* Build configuration list for PBXNativeTarget "GuelphlandiaUITests" */;
+			buildPhases = (
+				013DA6631E15B72200874273 /* Sources */,
+				013DA6641E15B72200874273 /* Frameworks */,
+				013DA6651E15B72200874273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013DA6691E15B72200874273 /* PBXTargetDependency */,
+			);
+			name = GuelphlandiaUITests;
+			productName = GuelphlandiaUITests;
+			productReference = 013DA6671E15B72200874273 /* GuelphlandiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		013DA63D1E15B72200874273 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Treefrog Inc";
+				TargetAttributes = {
+					013DA6441E15B72200874273 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2NAZNC754;
+						ProvisioningStyle = Automatic;
+					};
+					013DA65B1E15B72200874273 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2NAZNC754;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 013DA6441E15B72200874273;
+					};
+					013DA6661E15B72200874273 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2NAZNC754;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 013DA6441E15B72200874273;
+					};
+				};
+			};
+			buildConfigurationList = 013DA6401E15B72200874273 /* Build configuration list for PBXProject "Guelphlandia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 013DA63C1E15B72200874273;
+			productRefGroup = 013DA6461E15B72200874273 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				013DA6441E15B72200874273 /* Guelphlandia */,
+				013DA65B1E15B72200874273 /* GuelphlandiaTests */,
+				013DA6661E15B72200874273 /* GuelphlandiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		013DA6431E15B72200874273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013DA67A1E15B7E300874273 /* tiza.ttf in Resources */,
+				013DA6561E15B72200874273 /* LaunchScreen.storyboard in Resources */,
+				013DA6531E15B72200874273 /* Assets.xcassets in Resources */,
+				013DA64E1E15B72200874273 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013DA65A1E15B72200874273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013DA6651E15B72200874273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		013DA6411E15B72200874273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013DA6861E15DF4600874273 /* Deal.swift in Sources */,
+				013DA6511E15B72200874273 /* Guelphlandia.xcdatamodeld in Sources */,
+				013DA64B1E15B72200874273 /* randomOfferingVC.swift in Sources */,
+				013DA6801E15C64700874273 /* listingVC.swift in Sources */,
+				013DA6491E15B72200874273 /* AppDelegate.swift in Sources */,
+				013DA6841E15D1A700874273 /* headerCell.swift in Sources */,
+				013DA67E1E15BBEF00874273 /* data.swift in Sources */,
+				013DA67C1E15B89100874273 /* colours.swift in Sources */,
+				013DA6821E15CB0300874273 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013DA6581E15B72200874273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013DA6611E15B72200874273 /* GuelphlandiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013DA6631E15B72200874273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013DA66C1E15B72200874273 /* GuelphlandiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		013DA65E1E15B72200874273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013DA6441E15B72200874273 /* Guelphlandia */;
+			targetProxy = 013DA65D1E15B72200874273 /* PBXContainerItemProxy */;
+		};
+		013DA6691E15B72200874273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013DA6441E15B72200874273 /* Guelphlandia */;
+			targetProxy = 013DA6681E15B72200874273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		013DA64C1E15B72200874273 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013DA64D1E15B72200874273 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		013DA6541E15B72200874273 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013DA6551E15B72200874273 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		013DA66E1E15B72200874273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		013DA66F1E15B72200874273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		013DA6711E15B72200874273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = Guelphlandia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.Guelphlandia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		013DA6721E15B72200874273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = Guelphlandia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.Guelphlandia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		013DA6741E15B72200874273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = GuelphlandiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.GuelphlandiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guelphlandia.app/Guelphlandia";
+			};
+			name = Debug;
+		};
+		013DA6751E15B72200874273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = GuelphlandiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.GuelphlandiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guelphlandia.app/Guelphlandia";
+			};
+			name = Release;
+		};
+		013DA6771E15B72200874273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = GuelphlandiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.GuelphlandiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Guelphlandia;
+			};
+			name = Debug;
+		};
+		013DA6781E15B72200874273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = GuelphlandiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.GuelphlandiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Guelphlandia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		013DA6401E15B72200874273 /* Build configuration list for PBXProject "Guelphlandia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013DA66E1E15B72200874273 /* Debug */,
+				013DA66F1E15B72200874273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		013DA6701E15B72200874273 /* Build configuration list for PBXNativeTarget "Guelphlandia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013DA6711E15B72200874273 /* Debug */,
+				013DA6721E15B72200874273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		013DA6731E15B72200874273 /* Build configuration list for PBXNativeTarget "GuelphlandiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013DA6741E15B72200874273 /* Debug */,
+				013DA6751E15B72200874273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		013DA6761E15B72200874273 /* Build configuration list for PBXNativeTarget "GuelphlandiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013DA6771E15B72200874273 /* Debug */,
+				013DA6781E15B72200874273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		013DA64F1E15B72200874273 /* Guelphlandia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				013DA6501E15B72200874273 /* Guelphlandia.xcdatamodel */,
+			);
+			currentVersion = 013DA6501E15B72200874273 /* Guelphlandia.xcdatamodel */;
+			path = Guelphlandia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 013DA63D1E15B72200874273 /* Project object */;
+}
