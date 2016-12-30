@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					013DA6441E15B72200874273 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = L2NAZNC754;
+						DevelopmentTeam = S6424J6MK2;
 						ProvisioningStyle = Automatic;
 					};
 					013DA65B1E15B72200874273 = {
@@ -443,10 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L2NAZNC754;
+				DEVELOPMENT_TEAM = S6424J6MK2;
 				INFOPLIST_FILE = Guelphlandia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.Guelphlandia;
+				PRODUCT_BUNDLE_IDENTIFIER = FareedQ.GuelphlandiaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -456,10 +456,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L2NAZNC754;
+				DEVELOPMENT_TEAM = S6424J6MK2;
 				INFOPLIST_FILE = Guelphlandia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.Guelphlandia;
+				PRODUCT_BUNDLE_IDENTIFIER = FareedQ.GuelphlandiaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guelphlandia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upz-6Y-Tbe">
-                                <rect key="frame" x="16" y="64" width="343" height="66.5"/>
+                                <rect key="frame" x="16" y="84" width="343" height="66.5"/>
                                 <fontDescription key="fontDescription" name="Tiza" family="Tiza" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="DPS-Tr-pZm" secondAttribute="leading" id="b7s-hA-sJP"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Upz-6Y-Tbe" secondAttribute="leading" id="d2g-EN-T9e"/>
                             <constraint firstItem="Upz-6Y-Tbe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:10" id="fSO-Ga-TlI"/>
-                            <constraint firstItem="Upz-6Y-Tbe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fz8-Se-10X"/>
+                            <constraint firstItem="Upz-6Y-Tbe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fz8-Se-10X"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DPS-Tr-pZm" secondAttribute="trailing" id="rnq-sK-gl1"/>
                             <constraint firstItem="DPS-Tr-pZm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uEh-jS-9EQ"/>
                             <constraint firstItem="DPS-Tr-pZm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zON-Ab-4Wa"/>
@@ -180,7 +180,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qgm-Eg-LoM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="LO7-CF-UFZ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bfJ-3y-wXo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bfJ-3y-wXo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -72,7 +72,5 @@ class randomOfferingVC: UIViewController {
         seenOfferings.append(randomInt)
         return randomInt
     }
-
-
 }
 
