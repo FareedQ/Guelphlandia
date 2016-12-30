@@ -10,8 +10,8 @@ import CoreData
 import UIKit
 
 let deals:[(serverId:String, dayOfWeek:DayOfWeek,venue:String,offering:String,price:String,time:String)] =
-    [("1", .Thursday,"Western","1/2 Burgers","Purchase of a Drink",""),
-    ("2", .Thursday,"39 Carden","4 Snacks and a Bottle of Wine","$50",""),
+    [("1", .Thursday,"Western","1/2 Priced Burgers","Purchase of a Drink",""),
+    ("2", .Thursday,"39 Carden","$4 Snacks and a Bottle of Wine","$50",""),
     ("3", .Thursday,"Albion","Wine, Martinis and Cocktails","$5","5 - 11"),
     ("4", .Thursday,"Albion","Gosh Damn Thursdays","","10pm - 2am"),
     ("5", .Thursday,"Jimmy Jazz","Mill Street Cans","$4","9 - 12"),
@@ -56,12 +56,12 @@ func getContext () -> NSManagedObjectContext {
 
 func storeInCoreData() {
     let context = getContext()
-    guard let entity =  NSEntityDescription.entity(forEntityName: "Deals", in: context) else { return }
-    
-    let transc = NSManagedObject(entity: entity, insertInto: context)
-    context.mergePolicy = NSMergePolicy(merge: .overwriteMergePolicyType)
-    
     for deal in deals {
+        guard let entity =  NSEntityDescription.entity(forEntityName: "Deals", in: context) else { return }
+        
+        let transc = NSManagedObject(entity: entity, insertInto: context)
+        context.mergePolicy = NSMergePolicy(merge: .mergeByPropertyObjectTrumpMergePolicyType)
+        
         transc.setValue(deal.serverId, forKey: "serverId")
         transc.setValue(deal.dayOfWeek.asInt(), forKey: "dayOfWeek")
         transc.setValue(deal.offering, forKey: "offering")

@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Random OfferingVC-->
+        <!--Random Activity-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="randomOfferingVC" customModule="Guelphlandia" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                             <constraint firstItem="DPS-Tr-pZm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zON-Ab-4Wa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pqc-KJ-cKY"/>
+                    <navigationItem key="navigationItem" title="Random Activity" id="pqc-KJ-cKY"/>
                     <connections>
                         <outlet property="lblOffering" destination="DPS-Tr-pZm" id="JkA-HR-fyh"/>
                         <outlet property="lblTitle" destination="Upz-6Y-Tbe" id="HfV-pP-XIr"/>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="1996" y="122.78860569715144"/>
         </scene>
-        <!--ListingVC-->
+        <!--Daily Deals-->
         <scene sceneID="K0a-c1-EaJ">
             <objects>
-                <viewController id="Mqz-zP-OfB" customClass="listingVC" customModule="Guelphlandia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Daily Deals" id="Mqz-zP-OfB" customClass="listingVC" customModule="Guelphlandia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yyd-c4-JPC"/>
                         <viewControllerLayoutGuide type="bottom" id="JN7-B1-ycp"/>
@@ -75,13 +75,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-zL-IPg">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-zL-IPg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" id="DDS-4u-KZO" customClass="headerCell" customModule="Guelphlandia" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="1" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DDS-4u-KZO" id="iV2-iy-uCE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -89,7 +89,19 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDw-b8-moY">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRQ-dF-jqU">
+                                                            <rect key="frame" x="165" y="10" width="44.5" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" red="0.60392156860000001" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kRQ-dF-jqU" firstAttribute="centerY" secondItem="TDw-b8-moY" secondAttribute="centerY" id="ag1-eJ-j61"/>
+                                                        <constraint firstItem="kRQ-dF-jqU" firstAttribute="centerX" secondItem="TDw-b8-moY" secondAttribute="centerX" id="vDG-HB-QnA"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -101,10 +113,11 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="background" destination="TDw-b8-moY" id="L3D-7I-tuu"/>
+                                            <outlet property="lblTitle" destination="kRQ-dF-jqU" id="o3H-nq-Jz4"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dealCell" id="kJm-Ph-vbp">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="45" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kJm-Ph-vbp" id="XL1-AM-Vfj">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -120,13 +133,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JN7-B1-ycp" firstAttribute="top" secondItem="Zb5-zL-IPg" secondAttribute="bottom" constant="-49" id="2Dh-Xt-Zhu"/>
+                            <constraint firstItem="JN7-B1-ycp" firstAttribute="top" secondItem="Zb5-zL-IPg" secondAttribute="bottom" constant="15" id="2Dh-Xt-Zhu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zb5-zL-IPg" secondAttribute="trailing" constant="-16" id="GrR-Y2-pfk"/>
                             <constraint firstItem="Zb5-zL-IPg" firstAttribute="leading" secondItem="Oz2-OO-mN3" secondAttribute="leadingMargin" constant="-16" id="Hf2-5A-7bd"/>
-                            <constraint firstItem="Zb5-zL-IPg" firstAttribute="top" secondItem="Yyd-c4-JPC" secondAttribute="bottom" constant="-20" id="aN4-Pu-hHl"/>
+                            <constraint firstItem="Zb5-zL-IPg" firstAttribute="top" secondItem="Yyd-c4-JPC" secondAttribute="bottom" constant="-64" id="Ryy-Fa-K22"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KL5-hA-GKY"/>
+                    <navigationItem key="navigationItem" title="Daily Deals" id="KL5-hA-GKY">
+                        <barButtonItem key="rightBarButtonItem" title="Change" id="z4V-1z-rlP">
+                            <connections>
+                                <action selector="changeDay:" destination="Mqz-zP-OfB" id="lFw-xW-zeT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Zb5-zL-IPg" id="T0e-0h-MkO"/>
+                        <outlet property="topConstraint" destination="Ryy-Fa-K22" id="pUb-ps-TUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqf-31-7hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +161,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9k3-WM-80I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bhF-eX-Dei">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -175,7 +199,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UtW-Yj-mQa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="4Zg-FG-czY"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zq2-9j-StI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zq2-9j-StI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

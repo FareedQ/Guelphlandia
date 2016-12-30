@@ -19,13 +19,12 @@ class randomOfferingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeLookPretty()
-        self.tabBarController?.tabBar.backgroundColor = colours.blue
     }
     
     func makeLookPretty(){
         lblTitle.textColor = colours.grey
         lblOffering.textColor = colours.grey
-        lblOffering.text = "Shake phone for random offering"
+        lblOffering.text = "Shake phone for random thing to do"
     }
     
     
@@ -54,7 +53,7 @@ class randomOfferingVC: UIViewController {
         if randomInt == -1 {
             lblOffering.text = "I have no more ideas."
         } else {
-            lblOffering.text = deals[randomInt].offering
+            lblOffering.text = "\(deals[randomInt].offering) at \(deals[randomInt].venue)"
         }
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
             self.lblOffering.alpha = 1

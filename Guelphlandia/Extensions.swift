@@ -49,23 +49,23 @@ extension UIView {
 
 
 enum DayOfWeek {
-    case Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, NoDay
+    case Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, NoDay
     
     func asInt() -> Int {
         switch self {
-        case .Monday:
-            return 0
-        case .Tuesday:
-            return 1
-        case .Wednesday:
-            return 2
-        case .Thursday:
-            return 3
-        case .Friday:
-            return 4
         case .Saturday:
-            return 5
+            return 0
         case .Sunday:
+            return 1
+        case .Monday:
+            return 2
+        case .Tuesday:
+            return 3
+        case .Wednesday:
+            return 4
+        case .Thursday:
+            return 5
+        case .Friday:
             return 6
         case .NoDay:
             return -1
@@ -95,13 +95,13 @@ enum DayOfWeek {
     
     static func fromInt(int: Int) -> DayOfWeek {
         switch int {
-        case 0: return .Monday
-        case 1: return .Tuesday
-        case 2: return .Wednesday
-        case 3: return .Thursday
-        case 4: return .Friday
-        case 5: return .Saturday
-        case 6: return .Sunday
+        case 0: return .Saturday
+        case 1: return .Sunday
+        case 2: return .Monday
+        case 3: return .Tuesday
+        case 4: return .Wednesday
+        case 5: return .Thursday
+        case 6: return .Friday
         default:
             return .NoDay
         }

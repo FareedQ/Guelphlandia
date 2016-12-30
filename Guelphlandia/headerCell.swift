@@ -11,5 +11,6 @@ import UIKit
 class headerCell: UITableViewCell {
     
     @IBOutlet weak var background: UIView!
+    @IBOutlet weak var lblTitle: UILabel!
     
 }

@@ -21,7 +21,6 @@
 		013DA6801E15C64700874273 /* listingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67F1E15C64700874273 /* listingVC.swift */; };
 		013DA6821E15CB0300874273 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6811E15CB0300874273 /* Extensions.swift */; };
 		013DA6841E15D1A700874273 /* headerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6831E15D1A700874273 /* headerCell.swift */; };
-		013DA6861E15DF4600874273 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6851E15DF4600874273 /* Deal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		013DA67F1E15C64700874273 /* listingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listingVC.swift; sourceTree = "<group>"; };
 		013DA6811E15CB0300874273 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		013DA6831E15D1A700874273 /* headerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerCell.swift; sourceTree = "<group>"; };
-		013DA6851E15DF4600874273 /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +119,6 @@
 				013DA6831E15D1A700874273 /* headerCell.swift */,
 				013DA67F1E15C64700874273 /* listingVC.swift */,
 				013DA67D1E15BBEF00874273 /* data.swift */,
-				013DA6851E15DF4600874273 /* Deal.swift */,
 				013DA6521E15B72200874273 /* Assets.xcassets */,
 				013DA6541E15B72200874273 /* LaunchScreen.storyboard */,
 				013DA6571E15B72200874273 /* Info.plist */,
@@ -287,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013DA6861E15DF4600874273 /* Deal.swift in Sources */,
 				013DA6511E15B72200874273 /* Guelphlandia.xcdatamodeld in Sources */,
 				013DA64B1E15B72200874273 /* randomOfferingVC.swift in Sources */,
 				013DA6801E15C64700874273 /* listingVC.swift in Sources */,
@@ -546,6 +542,7 @@
 				013DA6721E15B72200874273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		013DA6731E15B72200874273 /* Build configuration list for PBXNativeTarget "GuelphlandiaTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +551,7 @@
 				013DA6751E15B72200874273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		013DA6761E15B72200874273 /* Build configuration list for PBXNativeTarget "GuelphlandiaUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +560,7 @@
 				013DA6781E15B72200874273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
