@@ -11,7 +11,7 @@ import CoreData
 
 class listingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var daysDeals = [String]()
+    var daysDeals = [(String,String)]()
     var nameOfDay = String()
     
     @IBOutlet weak var tableView: UITableView!
@@ -36,11 +36,23 @@ class listingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "dealCell", for: indexPath)
-            cell.textLabel?.text = daysDeals[indexPath.row - 1]
+            cell.textLabel?.text = daysDeals[indexPath.row - 1].0
             cell.accessoryType = .disclosureIndicator
             return cell
         }
     
+    }
+    
+    var selectedIndex = 0
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "details", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? dealDetailVC {
+            destination.givenServerId = daysDeals[selectedIndex - 1].1
+        }
     }
     
     func getTranscriptions (dayOfWeek: String) {
@@ -52,7 +64,8 @@ class listingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let searchResults = try getContext().fetch(fetchRequest)
             
             for trans in searchResults as [NSManagedObject] {
-                daysDeals.append("\(trans.value(forKey: "offering")!)")
+                let deal = ("\(trans.value(forKey: "offering")!)","\(trans.value(forKey: "serverId")!)")
+                daysDeals.append(deal)
             }
         } catch {
             print("Error with request: \(error)")
