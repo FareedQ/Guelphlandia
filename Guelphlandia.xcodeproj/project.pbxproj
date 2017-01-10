@@ -17,7 +17,7 @@
 		013DA66C1E15B72200874273 /* GuelphlandiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA66B1E15B72200874273 /* GuelphlandiaUITests.swift */; };
 		013DA67A1E15B7E300874273 /* tiza.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 013DA6791E15B79300874273 /* tiza.ttf */; };
 		013DA67C1E15B89100874273 /* colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67B1E15B89100874273 /* colours.swift */; };
-		013DA67E1E15BBEF00874273 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67D1E15BBEF00874273 /* data.swift */; };
+		013DA67E1E15BBEF00874273 /* APItoCoreDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67D1E15BBEF00874273 /* APItoCoreDataLayer.swift */; };
 		013DA6801E15C64700874273 /* listingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67F1E15C64700874273 /* listingVC.swift */; };
 		013DA6821E15CB0300874273 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6811E15CB0300874273 /* Extensions.swift */; };
 		013DA6841E15D1A700874273 /* headerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6831E15D1A700874273 /* headerCell.swift */; };
@@ -58,7 +58,7 @@
 		013DA66D1E15B72200874273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013DA6791E15B79300874273 /* tiza.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tiza.ttf; sourceTree = "<group>"; };
 		013DA67B1E15B89100874273 /* colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colours.swift; sourceTree = "<group>"; };
-		013DA67D1E15BBEF00874273 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		013DA67D1E15BBEF00874273 /* APItoCoreDataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APItoCoreDataLayer.swift; sourceTree = "<group>"; };
 		013DA67F1E15C64700874273 /* listingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listingVC.swift; sourceTree = "<group>"; };
 		013DA6811E15CB0300874273 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		013DA6831E15D1A700874273 /* headerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerCell.swift; sourceTree = "<group>"; };
@@ -113,20 +113,7 @@
 		013DA6471E15B72200874273 /* Guelphlandia */ = {
 			isa = PBXGroup;
 			children = (
-				013DA6791E15B79300874273 /* tiza.ttf */,
-				013DA6481E15B72200874273 /* AppDelegate.swift */,
-				013DA64A1E15B72200874273 /* randomOfferingVC.swift */,
-				013DA64C1E15B72200874273 /* Main.storyboard */,
-				013DA6811E15CB0300874273 /* Extensions.swift */,
-				013DA6831E15D1A700874273 /* headerCell.swift */,
-				013DA67F1E15C64700874273 /* listingVC.swift */,
-				013DA67D1E15BBEF00874273 /* data.swift */,
-				013DA6521E15B72200874273 /* Assets.xcassets */,
-				013DA6541E15B72200874273 /* LaunchScreen.storyboard */,
-				013DA6571E15B72200874273 /* Info.plist */,
-				013DA64F1E15B72200874273 /* Guelphlandia.xcdatamodeld */,
-				01D11D921E21338C0047FA45 /* dealDetailVC.swift */,
-				013DA67B1E15B89100874273 /* colours.swift */,
+				018015001E246DE200C9501C /* New Group */,
 			);
 			path = Guelphlandia;
 			sourceTree = "<group>";
@@ -147,6 +134,83 @@
 				013DA66D1E15B72200874273 /* Info.plist */,
 			);
 			path = GuelphlandiaUITests;
+			sourceTree = "<group>";
+		};
+		018015001E246DE200C9501C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6571E15B72200874273 /* Info.plist */,
+				018015041E246E8100C9501C /* Views */,
+				018015031E246E5000C9501C /* Controller */,
+				018015021E246E3800C9501C /* Model */,
+				018015011E246E2400C9501C /* Resources */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		018015011E246E2400C9501C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6521E15B72200874273 /* Assets.xcassets */,
+				013DA6791E15B79300874273 /* tiza.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		018015021E246E3800C9501C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				013DA67B1E15B89100874273 /* colours.swift */,
+				013DA67D1E15BBEF00874273 /* APItoCoreDataLayer.swift */,
+				013DA64F1E15B72200874273 /* Guelphlandia.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		018015031E246E5000C9501C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6481E15B72200874273 /* AppDelegate.swift */,
+				013DA6811E15CB0300874273 /* Extensions.swift */,
+				018015051E246EB700C9501C /* ViewControllers */,
+				018015071E246F8200C9501C /* ModelControllers */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		018015041E246E8100C9501C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				013DA64C1E15B72200874273 /* Main.storyboard */,
+				013DA6541E15B72200874273 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		018015051E246EB700C9501C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				013DA64A1E15B72200874273 /* randomOfferingVC.swift */,
+				01D11D921E21338C0047FA45 /* dealDetailVC.swift */,
+				013DA67F1E15C64700874273 /* listingVC.swift */,
+				018015061E246ECE00C9501C /* Resuseable */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		018015061E246ECE00C9501C /* Resuseable */ = {
+			isa = PBXGroup;
+			children = (
+				013DA6831E15D1A700874273 /* headerCell.swift */,
+			);
+			name = Resuseable;
+			sourceTree = "<group>";
+		};
+		018015071E246F8200C9501C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +357,7 @@
 				013DA6801E15C64700874273 /* listingVC.swift in Sources */,
 				013DA6491E15B72200874273 /* AppDelegate.swift in Sources */,
 				013DA6841E15D1A700874273 /* headerCell.swift in Sources */,
-				013DA67E1E15BBEF00874273 /* data.swift in Sources */,
+				013DA67E1E15BBEF00874273 /* APItoCoreDataLayer.swift in Sources */,
 				013DA67C1E15B89100874273 /* colours.swift in Sources */,
 				013DA6821E15CB0300874273 /* Extensions.swift in Sources */,
 			);
