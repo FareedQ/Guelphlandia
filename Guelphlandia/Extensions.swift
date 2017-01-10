@@ -46,7 +46,11 @@ extension UIView {
     }
 }
 
-
+extension String {
+    func toNSDecimalNumber() -> NSDecimalNumber {
+        return NSDecimalNumber(string: self)
+    }
+}
 
 enum DayOfWeek {
     case Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, NoDay

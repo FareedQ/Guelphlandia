@@ -21,6 +21,7 @@
 		013DA6801E15C64700874273 /* listingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA67F1E15C64700874273 /* listingVC.swift */; };
 		013DA6821E15CB0300874273 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6811E15CB0300874273 /* Extensions.swift */; };
 		013DA6841E15D1A700874273 /* headerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6831E15D1A700874273 /* headerCell.swift */; };
+		018015091E2471AD00C9501C /* dealDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018015081E2471AD00C9501C /* dealDM.swift */; };
 		01D11D931E21338C0047FA45 /* dealDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D11D921E21338C0047FA45 /* dealDetailVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		013DA67F1E15C64700874273 /* listingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listingVC.swift; sourceTree = "<group>"; };
 		013DA6811E15CB0300874273 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		013DA6831E15D1A700874273 /* headerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerCell.swift; sourceTree = "<group>"; };
+		018015081E2471AD00C9501C /* dealDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dealDM.swift; sourceTree = "<group>"; };
 		01D11D921E21338C0047FA45 /* dealDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dealDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +211,7 @@
 		018015071E246F8200C9501C /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				018015081E2471AD00C9501C /* dealDM.swift */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			files = (
 				01D11D931E21338C0047FA45 /* dealDetailVC.swift in Sources */,
 				013DA6511E15B72200874273 /* Guelphlandia.xcdatamodeld in Sources */,
+				018015091E2471AD00C9501C /* dealDM.swift in Sources */,
 				013DA64B1E15B72200874273 /* randomOfferingVC.swift in Sources */,
 				013DA6801E15C64700874273 /* listingVC.swift in Sources */,
 				013DA6491E15B72200874273 /* AppDelegate.swift in Sources */,

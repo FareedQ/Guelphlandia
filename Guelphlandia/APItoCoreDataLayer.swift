@@ -65,7 +65,7 @@ func storeInCoreData() {
         transc.setValue(deal.serverId, forKey: "serverId")
         transc.setValue(deal.dayOfWeek.asInt(), forKey: "dayOfWeek")
         transc.setValue(deal.offering, forKey: "offering")
-        transc.setValue(deal.price, forKey: "price")
+        transc.setValue(deal.price.toNSDecimalNumber(), forKey: "price")
         transc.setValue(deal.venue, forKey: "venue")
         transc.setValue(deal.time, forKey: "time")
         
