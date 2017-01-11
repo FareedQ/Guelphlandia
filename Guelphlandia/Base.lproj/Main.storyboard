@@ -170,7 +170,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day Of Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxB-Qd-aaB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.66531699899999996" blue="0.99605101350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="d3R-HB-IzJ"/>
                                 </constraints>
@@ -178,9 +177,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guelphlandia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSC-YY-EAE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guelphlandia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QSC-YY-EAE">
                                 <rect key="frame" x="0.0" y="108" width="375" height="106"/>
-                                <color key="backgroundColor" red="0.60392156860000001" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="106" id="Gr3-X8-DML"/>
                                 </constraints>
@@ -190,7 +188,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-8n-rNy">
                                 <rect key="frame" x="0.0" y="214" width="375" height="404"/>
-                                <color key="backgroundColor" red="0.5745951494" green="0.13873105699999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -210,6 +207,11 @@
                             <constraint firstItem="QSC-YY-EAE" firstAttribute="trailing" secondItem="MxB-Qd-aaB" secondAttribute="trailing" id="o8p-Bh-0Fu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblDayOfWeek" destination="MxB-Qd-aaB" id="esc-ZG-4qy"/>
+                        <outlet property="lblDetails" destination="Wy8-8n-rNy" id="sP8-Yu-j0z"/>
+                        <outlet property="lblVenue" destination="QSC-YY-EAE" id="35Q-iv-ZOM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmR-cZ-exf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

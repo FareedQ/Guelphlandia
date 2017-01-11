@@ -12,10 +12,18 @@ class dealDetailVC : UIViewController {
     
     var givenServerId = String()
     
+    @IBOutlet weak var lblDayOfWeek: UILabel!
+    @IBOutlet weak var lblVenue: UILabel!
+    @IBOutlet weak var lblDetails: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let deal = loadDeal(serverId: givenServerId)
+        lblDayOfWeek.text = deal.dayOfWeek.asString()
+        lblVenue.text = deal.venue
+        lblDetails.text = "\(deal.price)\n\(deal.offering)\n\(deal.time)"
         print(deal.offering)
         
     }
