@@ -168,23 +168,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-rP-rJR">
-                                <rect key="frame" x="123" y="223" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day Of Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxB-Qd-aaB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.66531699899999996" blue="0.99605101350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="d3R-HB-IzJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guelphlandia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSC-YY-EAE">
+                                <rect key="frame" x="0.0" y="108" width="375" height="106"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.78039215689999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="Gr3-X8-DML"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-8n-rNy">
+                                <rect key="frame" x="0.0" y="214" width="375" height="404"/>
+                                <color key="backgroundColor" red="0.5745951494" green="0.13873105699999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lgh-Za-oRv" firstAttribute="top" secondItem="Wy8-8n-rNy" secondAttribute="bottom" id="05B-vE-8NZ"/>
+                            <constraint firstItem="MxB-Qd-aaB" firstAttribute="top" secondItem="LbW-Gp-4lp" secondAttribute="bottom" id="35F-AB-a1K"/>
+                            <constraint firstItem="Wy8-8n-rNy" firstAttribute="leading" secondItem="QSC-YY-EAE" secondAttribute="leading" id="F7H-AH-jhv"/>
+                            <constraint firstItem="Wy8-8n-rNy" firstAttribute="trailing" secondItem="QSC-YY-EAE" secondAttribute="trailing" id="IBo-wV-Agq"/>
+                            <constraint firstItem="QSC-YY-EAE" firstAttribute="top" secondItem="MxB-Qd-aaB" secondAttribute="bottom" id="Pbt-jQ-SAQ"/>
+                            <constraint firstItem="MxB-Qd-aaB" firstAttribute="leading" secondItem="T8w-mA-hZ0" secondAttribute="leadingMargin" constant="-16" id="ROa-Tu-9le"/>
+                            <constraint firstItem="QSC-YY-EAE" firstAttribute="leading" secondItem="MxB-Qd-aaB" secondAttribute="leading" id="T1z-EL-ken"/>
+                            <constraint firstItem="Wy8-8n-rNy" firstAttribute="top" secondItem="QSC-YY-EAE" secondAttribute="bottom" id="dGJ-ad-Xkh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MxB-Qd-aaB" secondAttribute="trailing" constant="-16" id="hpC-oA-FaA"/>
+                            <constraint firstItem="QSC-YY-EAE" firstAttribute="trailing" secondItem="MxB-Qd-aaB" secondAttribute="trailing" id="o8p-Bh-0Fu"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="serverId" destination="j6L-rP-rJR" id="Go2-aK-qQt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmR-cZ-exf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2911" y="927"/>
+            <point key="canvasLocation" x="2909.5999999999999" y="926.98650674662679"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="m5V-Uz-NTR">

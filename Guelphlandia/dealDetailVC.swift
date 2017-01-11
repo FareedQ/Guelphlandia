@@ -10,12 +10,14 @@ import UIKit
 
 class dealDetailVC : UIViewController {
     
-    @IBOutlet weak var serverId: UILabel!
     var givenServerId = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        serverId.text = givenServerId
+        
+        let deal = loadDeal(serverId: givenServerId)
+        print(deal.offering)
+        
     }
     
 }
