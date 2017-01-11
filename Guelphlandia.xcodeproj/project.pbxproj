@@ -23,6 +23,7 @@
 		013DA6841E15D1A700874273 /* headerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DA6831E15D1A700874273 /* headerCell.swift */; };
 		018015091E2471AD00C9501C /* dealDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018015081E2471AD00C9501C /* dealDM.swift */; };
 		01D11D931E21338C0047FA45 /* dealDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D11D921E21338C0047FA45 /* dealDetailVC.swift */; };
+		01E9D6AD1E25BC2D00F533BE /* dataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9D6AC1E25BC2D00F533BE /* dataLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		013DA6831E15D1A700874273 /* headerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerCell.swift; sourceTree = "<group>"; };
 		018015081E2471AD00C9501C /* dealDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dealDM.swift; sourceTree = "<group>"; };
 		01D11D921E21338C0047FA45 /* dealDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dealDetailVC.swift; sourceTree = "<group>"; };
+		01E9D6AC1E25BC2D00F533BE /* dataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				018015081E2471AD00C9501C /* dealDM.swift */,
+				01E9D6AC1E25BC2D00F533BE /* dataLayer.swift */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				013DA64B1E15B72200874273 /* randomOfferingVC.swift in Sources */,
 				013DA6801E15C64700874273 /* listingVC.swift in Sources */,
 				013DA6491E15B72200874273 /* AppDelegate.swift in Sources */,
+				01E9D6AD1E25BC2D00F533BE /* dataLayer.swift in Sources */,
 				013DA6841E15D1A700874273 /* headerCell.swift in Sources */,
 				013DA67E1E15BBEF00874273 /* APItoCoreDataLayer.swift in Sources */,
 				013DA67C1E15B89100874273 /* colours.swift in Sources */,

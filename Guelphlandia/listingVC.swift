@@ -19,7 +19,7 @@ class listingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        daysDeals = getDeals(dayOfWeek: "\(Date().getDayOfWeek())")
+        daysDeals = dataLayer.loadDeals(dayOfWeek: "\(Date().getDayOfWeek())")
         nameOfDay = DayOfWeek.fromInt(int: Date().getDayOfWeek()).asString()
     }
     
@@ -66,7 +66,7 @@ class listingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         for i in 0...6 {
             let action = UIAlertAction(title: DayOfWeek.fromInt(int: i).asString(), style: .default) { (action) in
                 self.nameOfDay = DayOfWeek.fromInt(int: i).asString()
-                self.daysDeals = self.getDeals(dayOfWeek: "\(i)")
+                self.daysDeals = dataLayer.loadDeals(dayOfWeek: "\(i)")
                 self.tableView.reloadData()
             }
             alertController.addAction(action)
@@ -74,25 +74,5 @@ class listingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         self.present(alertController, animated: true) {
         }
-    }
-    
-    func getDeals(dayOfWeek: String) -> [(String,String)] {
-        var listOfDeals = [(String,String)]()
-        
-        let fetchRequest: NSFetchRequest<Deals> = Deals.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "dayOfWeek = %@", dayOfWeek)
-        
-        do {
-            let searchResults = try getContext().fetch(fetchRequest)
-            
-            for trans in searchResults as [NSManagedObject] {
-                let deal = ("\(trans.value(forKey: "offering")!)","\(trans.value(forKey: "serverId")!)")
-                listOfDeals.append(deal)
-            }
-        } catch {
-            print("Error with request: \(error)")
-        }
-        
-        return listOfDeals
     }
 }

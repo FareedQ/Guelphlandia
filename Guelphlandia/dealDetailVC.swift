@@ -20,7 +20,7 @@ class dealDetailVC : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let deal = loadDeal(serverId: givenServerId)
+        let deal = dataLayer.loadDeal(serverId: givenServerId)
         lblDayOfWeek.text = deal.dayOfWeek.asString()
         lblVenue.text = deal.venue
         lblDetails.text = "\(deal.price)\n\(deal.offering)\n\(deal.time)"
