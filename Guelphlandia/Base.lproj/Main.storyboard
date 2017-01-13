@@ -236,13 +236,13 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="PlY-hD-N9y">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qgm-Eg-LoM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LO7-CF-UFZ"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="LO7-CF-UFZ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bfJ-3y-wXo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bfJ-3y-wXo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -255,13 +255,13 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="zID-zw-k9r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UtW-Yj-mQa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4Zg-FG-czY"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="4Zg-FG-czY"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zq2-9j-StI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zq2-9j-StI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
